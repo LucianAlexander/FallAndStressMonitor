@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "263000820034",
+    "firebase_url": "https://fallandstressmonitor.firebaseio.com",
+    "project_id": "fallandstressmonitor",
+    "storage_bucket": "fallandstressmonitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263000820034:android:db1ffde7f33fa526",
+        "android_client_info": {
+          "package_name": "com.example.lux.fallandstressmonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263000820034-qas95n5vtn53up935kt0dno2f884s6e9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "263000820034-qas95n5vtn53up935kt0dno2f884s6e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDChXNzijLdBe4LL8K-4GCZrr6W2lRW_WA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
