@@ -1,0 +1,47 @@
+// COME HO FATTO IL DATABASE
+
+
+1) installo mysql
+2) accedo "mysql -u root -p" + password
+3) CREATE NEW DATABASE IF NOT EXISTS appdb;
+4) CREATE USER 'tesis'@'localhost' IDENTIFIED BY 'arduino';
+5) GRANT ALL PRIVILEGES ON appdb. * TO 'tesis'@'localhost';
+6) FLUSH PRIVILEGES;
+
+7)USE appdb;
+8)CREATE TABLE caregiver(
+    car_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    car_nome varchar(16) NOT NULL,
+    car_cognome varchar(16) NOT NULL,
+    car_tel int NOT NULL,
+    car_email varchar(16) NOT NULL UNIQUE,
+    car_password varchar(16) NOT NULL,
+    car_token varchar(400) NOT NULL
+)ENGINE=InnoDB;
+
+9)CREATE TABLE assistito(
+    asis_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    asis_nome varchar(16) NOT NULL,
+    asis_cognome varchar(16) NOT NULL,
+    asis_eta int NOT NULL,
+    asis_tel int NOT NULL,
+    car_id int NOT NULL,
+    CONSTRAINT no_co_te UNIQUE(asis_nome,asis_cognome,asis_tel),
+    FOREIGN KEY asis_caregiver(car_id)
+    REFERENCES caregiver(car_id)
+    ON UPDATE CASCADE
+    ON DELETE RESTRICT
+)ENGINE=InnoDB;
+
+10)CREATE TABLE dati(
+    dati_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    dati_data data NOT NULL,
+    dati_ora time NOT NULL,
+    dati_bpm int(11) NOT NULL,
+    dati_gsr double NOT NULL,
+    asis_id int NOT NULL,
+    FOREIGN KEY dati_assistito(asis_id)
+    REFERENCES assistito(asis_id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+)ENGINE=InnoDB;
