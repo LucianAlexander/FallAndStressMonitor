@@ -1,0 +1,2 @@
+-tabelle create
+-query per la creazione delle tabelle
