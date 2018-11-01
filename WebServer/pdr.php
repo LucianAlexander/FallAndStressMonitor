@@ -10,7 +10,7 @@
   
 
     #API access key from Google API's Console
-    define( 'API_ACCESS_KEY', 'AAAAPTwSCUI:APA91bEvZ4UYgnglpz973FFH1HYu4177doYdIGXGNW2AAg96pkKp_vVrAbfeo6MqDz3OG_E1PKxTgOqu447uxmdv5oPVrEttnRQ2a0vnrzbdY0JJf4AIWRKK_mnqvvryG7eMca1d5egr' );
+    define( 'API_ACCESS_KEY', 'yourapikey' );
  
     //$asisid =intval($_GET['a']); la usavo prima
     $messaggio = $_POST['m'];  // era GET
