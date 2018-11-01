@@ -1,2 +1,2 @@
--tabelle create
--query per la creazione delle tabelle
+- appdb : tabelle create
+- db.txt : query per la creazione delle tabelle
