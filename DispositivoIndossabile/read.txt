@@ -1,2 +1,0 @@
-aici merge cu char* post = costante
-si char * info variabile.
